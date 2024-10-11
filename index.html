@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jake Kraus Designs</title>
     <link href="/img/TSP_Clock.png" rel="shortcut icon">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 </head>
 
 <body>
     <header>
         <div>
+            <!--logo-->
             <img src="img/TSP_Clock.png" alt="logo img" width="150" height="150">
             <nav>
                 <ul type="square">
@@ -20,15 +24,22 @@
                     <li><a href="contact-me.html">Contact me</a></li>
                 </ul>
                 <div>
-                    <h1>Welcome!</h1>
+                    <!--Welcome Message-->
+                    <h2>Welcome!</h2>
                 </div>
                 <div>
+                    <!--Hero Image-->
                     <picture>
-                        <img src="https://placehold.co/1200x1200" alt="placeholder" srcset="">
+                        <source srcset="img/home-page/hero-image_1200" media="min-width 768px">
+                        <source srcset="img/home-page/hero-image_600" media="max-width 769px">
+                        <img src="img/home-page/hero-image-1200.jpg" style="max-width:100% ;" height="auto"
+                            alt="Home Page Hero Image">
                     </picture>
                 </div>
                 <div>
+                    <!--Final Message-->
                     <h1>Lets create something!</h1>
+                    <p> Copyright JAKE-KRAUS 2024</p>
                 </div>
 
             </nav>
@@ -37,4 +48,5 @@
 
 
 </body>
+
 </html>
