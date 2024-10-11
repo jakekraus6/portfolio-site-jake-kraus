@@ -1,0 +1,52 @@
+/*
+white: #FFFFFF
+FRENCHGREY: #D0CED6
+WENGE: #685664
+LINEN: #F5EBE0
+BLACK: #000000
+
+
+*/
+
+body {
+    background-color: #D0CED6;
+
+    font-family: boreal, sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 200;
+    color: #000000
+    
+}
+h1 {
+    font-size: 2.75em;
+    font-weight: 700;
+  }
+  
+  h2 {
+    font-size: 2.25em;
+    font-weight: 700;
+  }
+  
+  h3 {
+    font-size: 1.75em;
+    font-weight: 400;
+  }
+  h4 {
+    font-size: 1.35em;
+    font-weight: 400;
+  }
+  .button {
+    background-color: #685664;
+    font-weight: 100;
+    color: #ffffff;
+    border-radius: 3px;
+    border-bottom: 2px solid #000000;
+    border-top: 2px solid #000000;
+    border-left: #000000;
+    border-right: #000000;
+    border-color: #000000;
+    }
+.button:hover {
+    opacity: 0.5; /* Reduces the opacity of the button to 80% */
+    text-decoration: none;}
