@@ -48,6 +48,7 @@ h1 {
 
   
   .button {
+    display: inline-block;
     background-color: #685664;
     font-weight: 100;
     color: #ffffff;
@@ -62,9 +63,11 @@ h1 {
     width: fit-content;
     text-align: center;
     text-decoration: none;
+    transition-duration:0.2s;
+    transition-property: opacity;
     }
 .button:hover {
-    opacity: 0.5; /* Reduces the opacity of the button to 80% */
+    opacity: 0.8; /* Reduces the opacity of the button to 80% */
     text-decoration: none;}
 /* Layout styling */
 
@@ -76,8 +79,47 @@ h1 {
   text-align: center;
  }
 
+ #about-picture{
+  width: 100%;
+max-width: 100%;
+height: auto;
+ }
+ .sun{
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+ }
+
+ @keyframes color-change {
+  from {fill: #edc655}
+  to {fill: #f76414}
+ }
+ .cloud-front {  
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+ }
+
+ @keyframes cloud-move{
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+ }
+
+  .cloud-back {
+    animation: 34s cloud-move-reverse infinite alternate linear;
+  }
+
+ @keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
  .logo {
-  max-width: 250px;
+  max-width: 100px;
  }
 
  header {
@@ -149,4 +191,60 @@ h1 {
   justify-content: center;
   text-align: center;
   padding: 0 20px;
+}
+
+
+/*medium devices (640px and larger)*/
+@media only screen and (min-width: 640px) {
+  header{
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 30px;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+  
+}
+/*large devices (1024px and larger)*/
+
+@media only screen and (min-width: 1024px) {
+  header{
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 30px;
+  }
+  .col-lg-7 {
+    width: 60%;
+  }
+  .col-lg-5 {
+    width: 40%;
+  }
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/* xl large devices (1440px and larger)*/
+
+@media only screen and (min-width: 1440px) 
+{ 
+
 }
