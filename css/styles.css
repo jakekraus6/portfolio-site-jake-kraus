@@ -128,25 +128,25 @@ height: auto;
 }
 
  .logo {
-  max-width: 100px;
+  max-width: 150px;
  }
 
  header {
   background-color: #685664;
   position: fixed;
   width: 100%;
-  text-align: center;
+  
   
  }
+ .navtoggle li:not(:last-child) {
+  display: none;
+}
 
  nav > ul {
   list-style-type: none;
   padding: 0;
  }
- nav > ul > li {
-  display: inline-block;
-  width: auto
- }
+
 
  nav > ul > li > a {
   padding: 0 10px;
@@ -167,11 +167,34 @@ height: auto;
  nav > ul > li > a:active {
   color:#000000
  }
+ .navtoggle.responsive li  {
+  display: block;
+}
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid#F5EBE0
+}
 
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
  #hero {
   background-color: #685664;
   
  }
+ .navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top:45px;
+  font-size: 20px;
+}
 
 #self {
   display: flex;
@@ -224,7 +247,13 @@ height: auto;
     float: left;
     padding: 15px;
   }
-  
+  nav > ul > li {
+    display: inline-block;
+    width: auto
+   }
+   .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
 }
 /*large devices (1024px and larger)*/
 
