@@ -249,11 +249,25 @@ height: auto;
   }
   nav > ul > li {
     display: inline-block;
-    width: auto
+    width: auto;
    }
+   .navtoggle li:last-child {
+    display: none;
+  }
    .navtoggle li:not(:last-child) {
     display: inline-block;
   }
+  .navtoggle.responsive nav {
+    padding: 0;
+  }
+  .navtoggle.responsive li  {
+    padding: 0;
+    border-top: none
+  }
+  
+  .navtoggle.responsive li:last-child  {
+    padding: 0;}
+  
 }
 /*large devices (1024px and larger)*/
 

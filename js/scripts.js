@@ -1,17 +1,8 @@
-console.log("hello world")
-console.log("Welcome to my webpage!")
 function menuToggle() {
-    var x= document.getElementById ('myNavtoggle');
-}
-function menuToggle() {
-    var x = document.getElementById('myNavtoggle');
+  var x = document.getElementById('myNavtoggle');
+  if (x.className === 'navtoggle') {
     x.className += ' responsive';
+  } else {
+    x.className = 'navtoggle';
   }
-  function menuToggle() {
-    var x = document.getElementById('myNavtoggle');
-    if (x.className === 'navtoggle') {
-      x.className += ' responsive';
-    } else {
-      x.className = 'navtoggle';
-    }
-  }
+}
