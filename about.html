@@ -1,136 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jake Kraus Designs</title>
     <link href="/img/TSP_Clock.png" rel="shortcut icon">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-        <script src="https://kit.fontawesome.com/85a019cf69.js" crossorigin="anonymous"></script>
-</head>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    >
+    <script
+      src="https://kit.fontawesome.com/85a019cf69.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div>
-            <!--logo-->
-            <div class="container">
-                <div class="navtoggle" id="myNavtoggle">
+      <div>
+        <!--logo-->
+        <div class="container">
+          <div class="navtoggle" id="myNavtoggle">
             <a href="index.html">
-                <img src="img/TSP_Clock.png" alt="logo img" width="100" height="100">
+              <img
+                src="img/TSP_Clock.png"
+                alt="logo img"
+                width="100"
+                height="100"
+              >
             </a>
             <nav>
-                <!--Navigation-->
-                <ul class="navigation">
-                    <li><a href="design-work.html">Design Work</a></li>
-                    <li><a href="about.html">About Me</a></li>
-                    <li><a href="other-visual-work.html">Other Visual Work</a></li>
-                    <li><a href="contact-me.html">Contact me</a></li>
-                    <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
-                </ul>
-
+              <!--Navigation-->
+              <ul class="navigation">
+                <li><a href="design-work.html">Design Work</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="other-visual-work.html">Other Visual Work</a></li>
+                <li><a href="contact-me.html">Contact me</a></li>
+                <li>
+                  <a
+                    href="javascript:void(0);"
+                    class="icon"
+                    onclick="menuToggle()"
+                    ><i class="fas fa-bars"></i
+                  ></a>
+                </li>
+              </ul>
             </nav>
+          </div>
         </div>
-            </div>
-        </div>
-
+      </div>
     </header>
     <main>
+      <div>
+        <div id="about">
+          <!--About me with Hero Image-->
+          <h1>About Me</h1>
+        </div>
+      </div>
+      <div>
         <div>
-            <div id="about">
-                <!--About me with Hero Image-->
-                <h1>About Me</h1>
-            </div>
-        </div>
-        <div>
-            <div>
-                <div id="self">
-                    <picture>
-                        <source srcset="img/portfolio-image/jake_1200.jpg" media="(min-width:768px)">
-                        <source srcset="img/portfolio-image/jake_600.jpg" media="(max-width:769px)">
-                        <img src="img/portfolio-image/jake_1200.jpg" style="max-width: 100%;" height="auto"
-                            alt="Profile Image">
-                    </picture>
+          <div id="self">
+            <picture>
+              <source
+                srcset="img/portfolio-image/jake_1200.jpg"
+                media="(min-width:768px)"
+              >
+              <source
+                srcset="img/portfolio-image/jake_600.jpg"
+                media="(max-width:769px)"
+              >
+              <img
+                src="img/portfolio-image/jake_1200.jpg"
+                style="max-width: 100%"
+                height="auto"
+                alt="Profile Image"
+              >
+            </picture>
+          </div>
+
+          <div id="hero">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-7">
+                  <h3>My story</h3>
+                  <p>
+                    Hi, I’m Jake Kraus from Southern California. I have a
+                    passion for all things creativity—I love photography,
+                    videography, oil painting, and illustration. I’m also a
+                    complete audiophile. Outside of my creative pursuits, I
+                    enjoy learning new things and spending quality time with my
+                    family. Between my career as an engineer and my passions
+                    outside of work, I found my calling in UI design. My
+                    engineering journey has taught me to master intricate
+                    processes and collaborate closely with diverse teams. These
+                    experiences have honed my ability to understand complex
+                    systems and translate technical insights into user-friendly
+                    designs.
+                  </p>
+
+                  <a href="files/JAKE_KRAUS_RESUME.pdf" class="button" download>
+                    Download my Resume
+                  </a>
                 </div>
-
-                <div id="hero">
-                    <div class="container">
-                    <div class="row">
-                    <div class="col-lg-7">
-                        <h3>My story</h3>
-                        <p>
-                            Hi, I’m Jake Kraus from Southern California. I have a passion for all things creativity—I
-                            love
-                            photography, videography, oil painting, and illustration. I’m also a complete audiophile.
-                            Outside of
-                            my creative pursuits, I enjoy learning new things and spending quality time with my family.
-                            Between my career as an engineer and my passions outside of work, I found my calling in UI
-                            design.
-                            My engineering journey has taught me to master intricate processes and collaborate closely
-                            with
-                            diverse teams. These experiences have honed my ability to understand complex systems and
-                            translate
-                            technical insights into user-friendly designs.
-                        </p>
-
-                        <a href="files/JAKE_KRAUS_RESUME.pdf" class="button" download> Download my Resume </a>
+                <div class="col-md-12 col-lg-5">
+                  <!--Skills-->
+                  <h2>Skills and Tools</h2>
+                  <div class="row">
+                    <div class="col-md-6 col-lg-12">
+                      <h3>UI Skills:</h3>
+                      <ul>
+                        <li>UI elements, patterns, and hierarchy</li>
+                        <li>Design principles and heuristics</li>
+                        <li>Wireframing and prototyping</li>
+                        <li>Mobile app design</li>
+                        <li>Using design systems</li>
+                        <li>Responsive web design</li>
+                        <li>Interaction design and animation</li>
+                        <li>Creating style guides</li>
+                      </ul>
                     </div>
-                    <div class=" col-md-12 col-lg-5">
-                        <!--Skills-->
-                        <h2>Skills and Tools</h2>
-                        <div class="row">
-                            <div class="col-md-6 col-lg-12">
-                                <h3>UI Skills:</h3>
-                                <ul>
-
-                                    <li>UI elements, patterns, and hierarchy</li>
-                                    <li>Design principles and heuristics</li>
-                                    <li>Wireframing and prototyping</li>
-                                    <li>Mobile app design</li>
-                                    <li>Using design systems</li>
-                                    <li>Responsive web design</li>
-                                    <li>Interaction design and animation</li>
-                                    <li>Creating style guides</li>
-                                </ul>
-                            </div>
-                            <div class="col-md-6 col-lg-12">
-                                <!--Tools-->
-                                <h3>Tools:</h3>
-                                <ul>
-
-                                    <li>Adobe XD</li>
-                                    <li>Figma</li>
-                                    <li>Adobe Photoshop</li>
-                                    <li>Adobe Illustrator</li>
-                                    <li>Adobe Premiere Pro</li>
-                                    <li>Adobe After Effects</li>
-
-                                </ul>
-
-
-                            </div>
-                        </div>
+                    <div class="col-md-6 col-lg-12">
+                      <!--Tools-->
+                      <h3>Tools:</h3>
+                      <ul>
+                        <li>Adobe XD</li>
+                        <li>Figma</li>
+                        <li>Adobe Photoshop</li>
+                        <li>Adobe Illustrator</li>
+                        <li>Adobe Premiere Pro</li>
+                        <li>Adobe After Effects</li>
+                      </ul>
                     </div>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-        </div>
-</main>
+      </div>
+    </main>
     <footer>
-
-        <div id="copyright">
-            <p> Copyright JAKE-KRAUS 2024</p>
-        </div>
-        
+      <div id="copyright">
+        <p>Copyright JAKE-KRAUS 2024</p>
+      </div>
     </footer>
     <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
     <script src="js/scripts.js"></script>
-</body>
-
+  </body>
 </html>

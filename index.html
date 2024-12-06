@@ -1,71 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jake Kraus Designs</title>
     <link href="/img/TSP_Clock.png" rel="shortcut icon">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-        <script src="https://kit.fontawesome.com/85a019cf69.js" crossorigin="anonymous"></script>
-</head>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <script
+      src="https://kit.fontawesome.com/85a019cf69.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
+  <body>
     <header>
-         <!--logo-->
-         <div class="container">
-            <div class="navtoggle" id="myNavtoggle">
+      <!--logo-->
+      <div class="container">
+        <div class="navtoggle" id="myNavtoggle">
             <a href="index.html">
-           
-            <a href="index.html">
-                <img src="img/TSP_Clock.png" alt="logo img" width="100" height="100">
+              <img
+                src="img/TSP_Clock.png"
+                alt="logo img"
+                width="100"
+                height="100"
+              >
             </a>
             <nav>
-                <ul class="navigation">
-                    <li><a href="design-work.html">Design Work</a></li>
-                    <li><a href="about.html">About Me</a></li>
-                    <li><a href="other-visual-work.html">Other Visual Work</a></li>
-                    <li><a href="contact-me.html">Contact me</a></li>
-                    <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
-                </ul>
+              <ul class="navigation">
+                <li><a href="design-work.html">Design Work</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="other-visual-work.html">Other Visual Work</a></li>
+                <li><a href="contact-me.html">Contact me</a></li>
+                <li>
+                  <a
+                    href="javascript:void(0);"
+                    class="icon"
+                    onclick="menuToggle()"
+                    ><i class="fas fa-bars"></i
+                  ></a>
+                </li>
+              </ul>
             </nav>
-            </a>
+
         </div>
-         </div>
+      </div>
     </header>
     <main>
-        <div id="welcome">
-            <!--Welcome Message-->
-            <h2>Welcome!</h2>
-            
+      <div id="welcome">
+        <!--Welcome Message-->
+        <h2>Welcome!</h2>
+      </div>
+      <div>
+        <!--Hero Image-->
+        <div id="home-page">
+          <picture>
+            <source
+              srcset="img/home-page/hero-image_1200.jpg"
+              media="(min-width 768px)"
+            >
+            <source
+              srcset="img/home-page/hero-image_600.jpg"
+              media="(max-width 767px)"
+            >
+            <img
+              src="img/home-page/hero-image-1200.jpg"
+              style="max-width: 100%"
+              height="auto"
+              alt="Home Page Hero Image"
+            >
+          </picture>
         </div>
-        <div>
-            <!--Hero Image-->
-            <div id="home-page">
-                <picture>
-                    <source srcset="img/home-page/hero-image_1200" media="(min-width 768px)">
-                    <source srcset="img/home-page/hero-image_600" media="(max-width 769px)">
-                    <img src="img/home-page/hero-image-1200.jpg" style="max-width:100% ;" height="auto"
-                        alt="Home Page Hero Image">
-                </picture>
-            </div>
-        </div>
-
+      </div>
     </main>
 
     <footer>
-        <!--Final Message-->
-        <div id="message">
-            <h1>Lets create something!</h1>
-        </div>
-        <div id="copyright">
-            <p> Copyright JAKE-KRAUS 2024</p>
-        </div>
+      <!--Final Message-->
+      <div id="message">
+        <h1>Lets create something!</h1>
+      </div>
+      <div id="copyright">
+        <p>Copyright JAKE-KRAUS 2024</p>
+      </div>
     </footer>
-    
-    <script src="js/scripts.js"></script>
-</body>
 
+    <script src="js/scripts.js"></script>
+  </body>
 </html>
