@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jake Kraus Designs</title>
-    <link href="/img/TSP_Clock.png" rel="shortcut icon" />
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link href="/img/TSP_Clock.png" rel="shortcut icon">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link
       rel="stylesheet"
       type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    />
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <script
       src="https://kit.fontawesome.com/85a019cf69.js"
       crossorigin="anonymous"
@@ -22,31 +21,36 @@
       <!--logo-->
       <div class="container">
         <div class="navtoggle" id="myNavtoggle">
-          <a href="index.html">
-            <img
-              src="img/TSP_Clock.png"
-              alt="logo img"
-              width="100"
-              height="100"
-            />
-          </a>
-          <nav>
-            <ul class="navigation">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="services.html">Services</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="contact-me.html">Contact</a></li>
-              <li>
-                <a
-                  href="javascript:void(0);"
-                  class="icon"
-                  onclick="menuToggle()"
-                >
-                  <i class="fas fa-bars"></i>
-                </a>
-              </li>
-            </ul>
-          </nav>
+            <a href="index.html">
+              <img
+                src="img/TSP_Clock.png"
+                alt="logo img"
+                width="100"
+                height="100"
+              >
+            </a>
+            <nav>
+              <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                  <a href="services.html">Services <span class="arrow">▼</span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="photography.html">Photography</a></li>
+                    <li><a href="videography.html">Videography</a></li>
+                    <li><a href="visual-design.html">Visual Design</a></li>
+                    <li><a href="Vintage Portraits.html">Vintage Portraits</a></li>
+                  </ul>
+                </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact-me.html">Contact</a></li>
+                <li>
+                  <a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+                    <i class="fas fa-bars"></i>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+
         </div>
       </div>
     </header>
@@ -68,8 +72,10 @@
 
         <div class="service-images">
           <div class="image-container">
+            <a href="photography.html">
             <img src="img/Services/photgrapher/JPEG/photgrapher.jpg" alt="Photography" />
             <div class="overlay-text">Photography</div>
+          </a>
           </div>
           
           <div class="image-container">
@@ -78,15 +84,17 @@
           </div>
         
           <div class="image-container">
-            <a href="design-work.html">
+            <a href="visual-design.html">
             <img src="img/Services/designer/designer_800.jpg" alt="Visual design" />
             <div class="overlay-text">Visual Design</div>
           </a>
           </div>
         
           <div class="image-container">
+            <a href="vintage-focus-portraits.html">
             <img src="img/Services/vintage/JPEG/vintage.jpg" alt="Vintage Focused Portraits" />
             <div class="overlay-text">Vintage Focused Portraits</div>
+          </a>
           </div>
         </div>
       </section>

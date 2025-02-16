@@ -9,8 +9,7 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    >
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <script
       src="https://kit.fontawesome.com/85a019cf69.js"
       crossorigin="anonymous"
@@ -19,10 +18,9 @@
 
   <body>
     <header>
-      <div>
-        <!--logo-->
-        <div class="container">
-          <div class="navtoggle" id="myNavtoggle">
+      <!--logo-->
+      <div class="container">
+        <div class="navtoggle" id="myNavtoggle">
             <a href="index.html">
               <img
                 src="img/TSP_Clock.png"
@@ -32,23 +30,27 @@
               >
             </a>
             <nav>
-              <!--Navigation-->
               <ul class="navigation">
-                <li><a href="design-work.html">Design Work</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="other-visual-work.html">Other Visual Work</a></li>
-                <li><a href="contact-me.html">Contact me</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                  <a href="services.html">Services <span class="arrow">▼</span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="photography.html">Photography</a></li>
+                    <li><a href="videography.html">Videography</a></li>
+                    <li><a href="visual-design.html">Visual Design</a></li>
+                    <li><a href="Vintage Portraits.html">Vintage Portraits</a></li>
+                  </ul>
+                </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact-me.html">Contact</a></li>
                 <li>
-                  <a
-                    href="javascript:void(0);"
-                    class="icon"
-                    onclick="menuToggle()"
-                    ><i class="fas fa-bars"></i
-                  ></a>
+                  <a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+                    <i class="fas fa-bars"></i>
+                  </a>
                 </li>
               </ul>
             </nav>
-          </div>
+
         </div>
       </div>
     </header>

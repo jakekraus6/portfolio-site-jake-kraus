@@ -181,11 +181,13 @@ height: auto;
  }
  .navtoggle li:not(:last-child) {
   display: none;
+  color: #000;
 }
 
  nav > ul {
   list-style-type: none;
   padding: 0;
+  color: #000000;
  }
 
 
@@ -193,11 +195,11 @@ height: auto;
   padding: 0 10px;
   text-transform: uppercase;
   font-weight: 700;
-  color:#F5EBE0
+  color:#000000
  }
 
  nav > ul > li > a:visited {
-  color:#F5EBE0
+  color:#000000;
  }
 
 
@@ -222,6 +224,7 @@ height: auto;
 
 .navtoggle.responsive li:last-child  {
   padding: 0 0 10px;
+  
 }
  #hero {
   background-color: #685664;
@@ -229,12 +232,14 @@ height: auto;
  }
  .navtoggle, .navtoggle.responsive {
   position: relative;
+  color:#000000;
 }
 .navtoggle li .icon {
   position: absolute;
   right: 0;
   top:45px;
   font-size: 20px;
+  color:#000000;
 }
 
 #self {
@@ -358,7 +363,57 @@ service-images {
   #message h3 {
     font-size: 1.8rem; /* Smaller font size for screens smaller than 768px */
   }
+  
+/* Style for dropdown container */
+.dropdown {
+  position: relative;
+}
 
+/* Hide dropdown menu initially */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #C3A86f;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  top: 100%;
+  left: 0;
+  width: 180px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Dropdown items */
+.dropdown-menu li {
+  margin: 0px;
+}
+
+.dropdown-menu a {
+  padding: 30px;
+  display: block;
+  text-decoration: none;
+  
+  color: #000;
+}
+
+.dropdown-menu a:hover {
+  background-color: #A5ADB6;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Arrow rotation effect */
+.dropdown .arrow {
+  transition: transform 0.3s ease;
+}
+
+.dropdown:hover .arrow {
+  transform: rotate(180deg);
+}
 @media (max-width: 480px) {
   #message h3 {
     font-size: 1.5rem; /* Even smaller for very small screens */
@@ -408,6 +463,8 @@ service-images {
   
 }
 /*large devices (1024px and larger)*/
+
+
 
 @media only screen and (min-width: 1024px) {
   header{
