@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Timestopped Productions</title>
-    <link href="/img/TSP_Clock.png" rel="shortcut icon">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href="/img/TSP_Clock.png" rel="shortcut icon" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <link
       rel="stylesheet"
       type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
     <script
       src="https://kit.fontawesome.com/85a019cf69.js"
       crossorigin="anonymous"
@@ -21,78 +22,169 @@
       <!--logo-->
       <div class="container">
         <div class="navtoggle" id="myNavtoggle">
-            <a href="index.html">
-              <img
-                src="img/TSP_Clock.png"
-                alt="logo img"
-                width="100"
-                height="100"
-              >
-            </a>
-            <nav>
-              <ul class="navigation">
-                <li><a href="index.html">Home</a></li>
-                <li class="dropdown">
-                  <a href="services.html">Services <span class="arrow">▼</span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="photography.html">Photography</a></li>
-                    <li><a href="videography.html">Videography</a></li>
-                    <li><a href="visual-design.html">Visual Design</a></li>
-                    <li><a href="Vintage Portraits.html">Vintage Portraits</a></li>
-                  </ul>
-                </li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact-me.html">Contact</a></li>
-                <li>
-                  <a href="javascript:void(0);" class="icon" onclick="menuToggle()">
-                    <i class="fas fa-bars"></i>
-                  </a>
-                </li>
-              </ul>
-            </nav>
-
+          <a href="index.html">
+            <img
+              src="img/TSP_Clock.png"
+              alt="logo img"
+              width="100"
+              height="100"
+            />
+          </a>
+          <nav>
+            <ul class="navigation">
+              <li><a href="index.html">Home</a></li>
+              <li class="dropdown">
+                <a href="services.html"
+                  >Services <span class="arrow">▼</span></a
+                >
+                <div class="dropdown-menu">
+                  <div class="service-item">
+                    <a href="photography.html">Photography</a>
+                  </div>
+                  <div class="service-item">
+                    <a href="videography.html">Videography</a>
+                  </div>
+                  <div class="service-item">
+                    <a href="visual-design.html">Visual Design</a>
+                  </div>
+                  <div class="service-item">
+                    <a href="vintage-focus-portraits.html">Vintage Focus Portraits</a>
+                  </div>
+                </div>
+              </li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact-me.html">Contact</a></li>
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  class="icon"
+                  onclick="menuToggle()"
+                >
+                  <i class="fas fa-bars"></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </header>
     <main>
       <div id="work">
-       <div>
-          <!--Body Of work-->
+        <div >
+          <!-- Image 1 -->
           <picture>
             <source
-              srcset="img/sci-finds/1200px/case_study_sci_finds.jpg"
+              srcset="img/sci-finds/1200px/case_study_sci_finds_1200.jpg"
               media="(max-width:768px)"
-            >
+            />
             <source
-              srcset="img/sci-finds/600px/case_study_sci_finds.jpg"
+              srcset="img/sci-finds/600px/case_study_sci_finds_600.jpg"
               media="(max-width:767px)"
-            >
+            />
             <img
-              src="img/sci-finds/1200px/case_study_sci_finds.jpg"
+              src="img/sci-finds/1200px/case_study_sci_finds_1200.jpg"
               style="max-width: 100%"
-            
               alt="Profile Image"
-            >
+            />
           </picture>
-          <div>
-            <picture>
-              <source
-                srcset="img/sci-finds/1200px/case_study_overview.jpg"
-                media="(max-width:768px)"
-              >
-              <source
-                srcset="img/sci-finds/600px/case_study_overview.jpg"
-                media="(max-width:767px)"
-              >
-              <img
-                src="img/sci-finds/1200px/case_study_overview.jpg"
-                style="max-width: 100%"
+          <!-- Image 2 -->
+          <picture>
+            <source
+              srcset="img/sci-finds/1200px/case_study_overview_1200.jpg"
+              media="(max-width:768px)"
+            />
+            <source
+              srcset="img/sci-finds/600px/case_study_overview_600.jpg"
+              media="(max-width:767px)"
+            />
+            <img
+              src="img/sci-finds/1200px/case_study_overview_1200.jpg"
+              style="max-width: 100%"
+              alt="Profile Image"
+            />
+          </picture>
 
-                alt="Profile Image"
-              >
-            </picture>
-          </div>
-        </div>
+          <!-- Image 4 -->
+          <picture>
+            <source
+              srcset="img/sci-finds/1200px/Mock_up_1200.jpg"
+              media="(max-width:768px)"
+            />
+            <source
+              srcset="img/sci-finds/600px/Mock_up_600.jpg"
+              media="(max-width:767px)"
+            />
+            <img
+              src="img/sci-finds/1200px/Mock_up_1200.jpg"
+              style="max-width: 100%"
+              alt="Profile Image"
+            />
+          </picture>
+          <!-- Image 5 -->
+          <picture>
+            <source
+              srcset="img/sci-finds/1200px/iOS_User_Testing_Feedback_1200.jpg"
+              media="(max-width:768px)"
+            />
+            <source
+              srcset="img/sci-finds/600px/iOS_User_Testing_Feedback_600.jpg"
+              media="(max-width:767px)"
+            />
+            <img
+              src="img/sci-finds/1200px/iOS_User_Testing_Feedback_1200.jpg"
+              style="max-width: 100%"
+              alt="Profile Image"
+            />
+          </picture>
+          <!-- Image 6 -->
+          <picture>
+            <source
+              srcset="img/sci-finds/1200px/Android_User_Testing_Feedback_1200.jpg"
+              media="(max-width:768px)"
+            />
+            <source
+              srcset="img/sci-finds/600px/Android_User_Testing_Feedback_600.jpg"
+              media="(max-width:767px)"
+            />
+            <img
+              src="img/sci-finds/1200px/Android_User_Testing_Feedback_1200.jpg"
+              style="max-width: 100%"
+              alt="Profile Image"
+            />
+          </picture>
+          <!-- Image 7 -->
+          <picture>
+            <source
+              srcset="img/sci-finds/1200px/Mock_Up_1_1200.jpg"
+              media="(max-width:768px)"
+            />
+            <source
+              srcset="img/sci-finds/600px/Mock_Up_1_600.jpg"
+              media="(max-width:767px)"
+            />
+            <img
+              src="img/sci-finds/1200px/Mock_Up_1_1200.jpg"
+              style="max-width: 100%"
+              alt="Profile Image"
+            />
+          </picture>
+          <!-- Image 8 -->
+          <picture>
+            <source
+              srcset="img/sci-finds/1200px/Reflection_1200.jpg"
+              media="(max-width:768px)"
+            />
+            <source
+              srcset="img/sci-finds/600px/Reflection_600.jpg"
+              media="(max-width:767px)"
+            />
+            <img
+              src="img/sci-finds/1200px/Reflection_1200.jpg"
+              style="max-width: 100%"
+              alt="Profile Image"
+            />
+          </picture>
+                 </div>
       </div>
     </main>
     <footer>

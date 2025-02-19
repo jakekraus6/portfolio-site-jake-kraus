@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jake Kraus Designs</title>
-    <link href="/img/TSP_Clock.png" rel="shortcut icon">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timestopped Productions</title>
+    <link href="/img/TSP_Clock.png" rel="shortcut icon" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <link
       rel="stylesheet"
       type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
     <script
       src="https://kit.fontawesome.com/85a019cf69.js"
       crossorigin="anonymous"
@@ -21,36 +22,49 @@
       <!--logo-->
       <div class="container">
         <div class="navtoggle" id="myNavtoggle">
-            <a href="index.html">
-              <img
-                src="img/TSP_Clock.png"
-                alt="logo img"
-                width="100"
-                height="100"
-              >
-            </a>
-            <nav>
-              <ul class="navigation">
-                <li><a href="index.html">Home</a></li>
-                <li class="dropdown" onclick="toggleDropdown()">
-                  <a href="services.html">Services <span class="arrow">▼</span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="photography.html">Photography</a></li>
-                    <li><a href="videography.html">Videography</a></li>
-                    <li><a href="visual-design.html">Visual Design</a></li>
-                    <li><a href="vintage-focus-portraits.html">Portraits</a></li>
-                    <li><a href="vintage-focus-portraits.html">Portraits</a></li>
-                  </ul>
-                </li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact-me.html">Contact</a></li>
-                <li>
-                  <a href="javascript:void(0);" class="icon" onclick="menuToggle()">
-                    <i class="fas fa-bars"></i>
-                  </a>
-                </li>
-              </ul>
-            </nav>
+          <a href="index.html">
+            <img
+              src="img/TSP_Clock.png"
+              alt="logo img"
+              width="100"
+              height="100"
+            />
+          </a>
+          <nav>
+            <ul class="navigation">
+              <li><a href="index.html">Home</a></li>
+              <li class="dropdown">
+                <a href="services.html"
+                  >Services <span class="arrow">▼</span></a
+                >
+                <div class="dropdown-menu">
+                  <div class="service-item">
+                    <a href="photography.html">Photography</a>
+                  </div>
+                  <div class="service-item">
+                    <a href="videography.html">Videography</a>
+                  </div>
+                  <div class="service-item">
+                    <a href="visual-design.html">Visual Design</a>
+                  </div>
+                  <div class="service-item">
+                    <a href="vintage-focus-portraits.html">Vintage Focus Portraits</a>
+                  </div>
+                </div>
+              </li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact-me.html">Contact</a></li>
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  class="icon"
+                  onclick="menuToggle()"
+                >
+                  <i class="fas fa-bars"></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </header>
@@ -66,20 +80,23 @@
             <source
               srcset="img/home-page/welcome-photos/welcome_photo_800.jpg"
               media="(min-width:768px)"
-            >
+            />
             <source
               srcset="img/home-page/welcome-photos/welcome_photo_400.jpg"
               media="(max-width:767px)"
-            >
+            />
             <img
               src="img/home-page/welcome-photos/welcome_photo_800.jpg"
               alt="Home Page Hero Image"
-            >
+            />
           </picture>
         </div>
       </div>
       <div id="message">
-        <h3>Bringing Stories to Life—Through Lens and Design. <span>Let's create something!</span></h3>
+        <h3>
+          Bringing Stories to Life—Through Lens and Design.
+          <span>Let's create something!</span>
+        </h3>
       </div>
       <div>
         <a href="contact-me.html" class="button">Get into Contact</a>
