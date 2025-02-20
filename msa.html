@@ -15,6 +15,52 @@
       src="https://kit.fontawesome.com/85a019cf69.js"
       crossorigin="anonymous"
     ></script>
+    <style>
+      /* Lightbox Styles */
+      .lightbox {
+        display: none;
+        position: fixed;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+      }
+
+      .lightbox img {
+        max-width: 80%;
+        max-height: 80%;
+        border-radius: 8px;
+      }
+
+      .lightbox .close {
+        position: absolute;
+        top: 20px; right: 30px;
+        color: white;
+        font-size: 40px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      .lightbox .prev, .lightbox .next {
+        position: absolute;
+        top: 50%;
+        color: white;
+        font-size: 40px;
+        cursor: pointer;
+        user-select: none;
+      }
+
+      .lightbox .prev { left: 50px; }
+      .lightbox .next { right: 50px; }
+
+      #project-images img {
+        cursor: pointer;
+        max-width: 50%;
+        border-radius: 10px;
+      }
+    </style>
   </head>
 
   <body>
@@ -69,154 +115,29 @@
       </div>
     </header>
     <main>
-      <div id="work">
-        <div >
-          <!-- Image 1 -->
-          <picture>
-            <source
-              srcset="img/msa/1200/Morning_Star_Case_Study_1200.jpg"
-              media="(max-width:768px)"
-            />
-            <source
-              srcset="img/msa/600/Morning_Star_Case_Study_600.jpg"
-              media="(max-width:767px)"
-            />
-            <img
-              src="img/msa/1200/Morning_Star_Case_Study_1200.jpg"
-              style="max-width: 100%"
-              alt="Profile Image"
-            />
-          </picture>
-          <!-- Image 2 -->
-          <picture>
-            <source
-              srcset="img/msa/1200/Case_Study_Overview_and_objective_1200.jpg"
-              media="(max-width:768px)"
-            />
-            <source
-              srcset="img/msa/600/Case_Study_Overview_and_objective_600.jpg"
-              media="(max-width:767px)"
-            />
-            <img
-              src="img/msa/1200/Case_Study_Overview_and_objective_1200.jpg"
-              style="max-width: 100%"
-              alt="Profile Image"
-            />
-          </picture>
-
-          <!-- Image 4 -->
-          <picture>
-            <source
-              srcset="img/msa/1200/Case_Study_User_Information_1200.jpg"
-              media="(max-width:768px)"
-            />
-            <source
-              srcset="img/msa/600/Case_Study_User_Information_600.jpg"
-              media="(max-width:767px)"
-            />
-            <img
-              src="img/msa/1200/Case_Study_User_Information_1200.jpg"
-              style="max-width: 100%"
-              alt="Profile Image"
-            />
-          </picture>
-          <!-- Image 5 -->
-          <picture>
-            <source
-              srcset="img/msa/1200/Macbook_Mockup_1200.jpg"
-              media="(max-width:768px)"
-            />
-            <source
-              srcset="img/msa/600/Macbook_Mockup_600.jpg"
-              media="(max-width:767px)"
-            />
-            <img
-              src="img/msa/1200/Macbook_Mockup_1200.jpg"
-              style="max-width: 100%"
-              alt="Profile Image"
-            />
-          </picture>
-          <!-- Image 6 -->
-          <picture>
-            <source
-              srcset="img/msa/1200/Mid_Fid_Wire_Frames_1200.jpg"
-              media="(max-width:768px)"
-            />
-            <source
-              srcset="img/msa/600/Mid_Fid_Wire_Frames_1200.jpg"
-              media="(max-width:767px)"
-            />
-            <img
-              src="img/msa/1200/Mid_Fid_Wire_Frames_1200.jpg"
-              style="max-width: 100%"
-              alt="Profile Image"
-            />
-          </picture>
-          <!-- Image 7 -->
-          <picture>
-            <source
-              srcset="img/msa/1200/Case_Study_User_Feedback_1200.jpg"
-              media="(max-width:768px)"
-            />
-            <source
-              srcset="img/msa/600/Case_Study_User_Feedback_600.jpg"
-              media="(max-width:767px)"
-            />
-            <img
-              src="img/msa/1200/Case_Study_User_Feedback_1200.jpg"
-              style="max-width: 100%"
-              alt="Profile Image"
-            />
-          </picture>
-          <!-- Image 8 -->
-          <picture>
-            <source
-              srcset="img/msa/1200/Case_Study_High_Fid Wireframes_1200.jpg"
-              media="(max-width:768px)"
-            />
-            <source
-              srcset="img/msa/600/Case_Study_High_Fid Wireframes_600.jpg"
-              media="(max-width:767px)"
-            />
-            <img
-              src="img/msa/1200/Case_Study_High_Fid Wireframes_1200.jpg"
-              style="max-width: 100%"
-              alt="Profile Image"
-            />
-          </picture>
-          <!-- Image 9 -->
-          <picture>
-            <source
-              srcset="img/msa/1200/Case_Study_Reflection_1200.jpg"
-              media="(max-width:768px)"
-            />
-            <source
-              srcset="img/msa/600/Case_Study_Reflection_600.jpg"
-              media="(max-width:767px)"
-            />
-            <img
-              src="img/msa/1200/Case_Study_Reflection_1200.jpg"
-              style="max-width: 100%"
-              alt="Profile Image"
-            />
-          </picture>
-          <!-- Image 10 -->
-          <picture>
-            <source
-              srcset="img/msa/1200/Computer_and_Phone_Mock_up_1200.jpg"
-              media="(max-width:768px)"
-            />
-            <source
-              srcset="img/msa/600/Computer_and_Phone_Mock_up_600.jpg"
-              media="(max-width:767px)"
-            />
-            <img
-              src="img/msa/1200/Computer_and_Phone_Mock_up_1200.jpg"
-              style="max-width: 100%"
-              alt="Profile Image"
-            />
-          </picture>
+      <div id="project-images">
+        <div>
+          <h2>Morning Star Apothecary</h2>
+          <img src="img/msa/1200/Morning_Star_Case_Study_1200.jpg" alt="Image 1" onclick="openLightbox(0)">
+          <img src="img/msa/1200/Case_Study_Overview_and_objective_1200.jpg" alt="Image 2" onclick="openLightbox(1)">
+           <img src="img/msa/1200/Macbook_Mockup_1200.jpg" alt="Image 4" onclick="openLightbox(3)">
+          <img src="img/msa/1200/Mid_Fid_Wire_Frames_1200.jpg" alt="Image 5" onclick="openLightbox(4)">
+          <img src="img/msa/1200/Case_Study_User_Feedback_1200.jpg" alt="Image 6" onclick="openLightbox(5)">
+          <img src="img/msa/1200/Case_Study_High_Fid Wireframes_1200.jpg" alt="Image 7" onclick="openLightbox(6)">
+          <img src="img/msa/1200/Case_Study_Reflection_1200.jpg" alt="Image 8" onclick="openLightbox(7)">
+          <img src="img/msa/1200/Computer_and_Phone_Mock_up_1200.jpg" alt="Image 9" onclick="openLightbox(8)">
         </div>
+        <div>
+          <a href="ux_ui_plus_web.html" class="button">Back to UX/UI &amp; Webdesign</a>
+        </div>
+ <!-- Lightbox -->
+ <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <span class="close">&times;</span>
+  <img id="lightbox-image" alt="Zoomed Image">
+  <div class="prev" onclick="prevImage(event)">&#10094;</div>
+  <div class="next" onclick="nextImage(event)">&#10095;</div>
+</div>
+
       </div>
     </main>
     <footer>
@@ -224,6 +145,48 @@
         <p>Copyright JAKE-KRAUS 2024</p>
       </div>
     </footer>
+    <script>
+      const images = document.querySelectorAll('#project-images img');
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImage = document.getElementById('lightbox-image');
+      let currentIndex = 0;
+
+      function openLightbox(index) {
+        currentIndex = index;
+        lightbox.style.display = 'flex';
+        lightboxImage.src = images[currentIndex].src;
+      }
+
+      function closeLightbox() {
+        lightbox.style.display = 'none';
+      }
+
+      function nextImage(event) {
+        event.stopPropagation();
+        currentIndex = (currentIndex + 1) % images.length;
+        lightboxImage.src = images[currentIndex].src;
+      }
+
+      function prevImage(event) {
+        event.stopPropagation();
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        lightboxImage.src = images[currentIndex].src;
+        
+      }
+      document.addEventListener('keydown', (e) => {
+      if (lightbox.style.display === 'flex') {  // Only work if lightbox is open
+        if (e.key === 'ArrowRight') {
+          currentIndex = (currentIndex + 1) % images.length;  // Go to next image (loop back to first)
+          lightboxImage.src = images[currentIndex].src;  // Update lightbox image
+        } else if (e.key === 'ArrowLeft') {
+          currentIndex = (currentIndex - 1 + images.length) % images.length;  // Go to previous image (loop back to last)
+          lightboxImage.src = images[currentIndex].src;  // Update lightbox image
+        } else if (e.key === 'Escape') {
+          closeLightbox();  // Close the lightbox if Escape is pressed
+        }
+      }
+    });
+    </script>
     <script
       src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="

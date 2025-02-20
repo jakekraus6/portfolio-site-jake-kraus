@@ -26,7 +26,7 @@ body {
     
 }
 main {
-  padding-top: 200px;
+  padding-top: 175px;
   
 }
 
@@ -85,7 +85,6 @@ h1 {
 .contact-container {
   max-width: 800px;  /* Optional: Adjust width for readability */
   margin: 0 auto;    /* Centers the container */
-  padding: 20px;     /* Add some spacing */
   text-align: center; /* Centers text inside */
 }
 .row {
@@ -101,11 +100,7 @@ h1 {
   text-align: center;
  }
 
- #about-picture{
-  width: 100%;
-max-width: 100%;
-height: auto;
- }
+
  .sun{
   animation-duration: 4s;
   animation-name: color-change;
@@ -129,31 +124,6 @@ height: auto;
   max-width: 100%;
   height: auto;
 }
- @keyframes color-change {
-  from {fill: #edc655}
-  to {fill: #f76414}
- }
- .cloud-front {  
-  animation-duration: 30s;
-  animation-name: cloud-move;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
- }
-
- @keyframes cloud-move{
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
- }
-
-  .cloud-back {
-    animation: 34s cloud-move-reverse infinite alternate linear;
-  }
-
- @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
-}
 
  .logo {
   max-width: 150px;
@@ -164,22 +134,29 @@ height: auto;
   position: fixed;
   width: 100%;
   z-index: 1000;
-  
-  
  }
  
  #about-text {
   max-width: 800px; /* Keeps it readable */
   margin: 40px auto; /* Adds space around it and centers it */
-  padding: 20px; /* Adds space inside */
   text-align: center; /* Centers the text */
 }
- footer { background-color: #A5ADB6;
+#about h2{
+  text-align: center;
+}
+#about-picture{
   width: 100%;
-  margin: 0; /* Remove any margin */
+max-width: 100%;
+height: auto;
+ }
+ footer { 
+  background-color: #A5ADB6;
+  width: 100%;
+  margin-top: 74px;
   padding: 20px 0; /* Adjust padding as needed */
   position: relative; /* Ensure it stays in flow */
  }
+
  .navtoggle li:not(:last-child) {
   display: none;
   color: #000;
@@ -246,7 +223,6 @@ height: auto;
 #self {
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
 }
 
 #welcome h2{
@@ -286,20 +262,11 @@ main {
   flex-direction: column;
 }
 
-footer {
-  background-color: #A5ADB6;
-  width: 100%;
-  margin: 0;
-  padding: 10px 0; /* Adjust padding to suit */
-  position: relative;
-  margin-top: auto; /* Ensures footer sticks to the bottom if content is small */
-}
 
 #copyright p {
   text-align: center;
 }
 #services {
-  padding: 40px 20px;
   padding-bottom: 0;
   margin-bottom: 0;
   text-align: center;
@@ -328,15 +295,8 @@ footer {
   padding-right: 65px;
 
 }
-.service-description h2 {
-  font-size: 2.5rem;
-  font-weight: bold;
-}
-.service-description p {
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-top: 10px;
-}
+
+
 /* Ensure images maintain aspect ratio */
 service-images {
   display: flex;
@@ -407,16 +367,17 @@ service-images {
   text-align: center;
   gap: 20px; /* Adds spacing between images */
   justify-content: center;
+  
 }
 
-#work > div {
-  flex: 1 1 calc(50% - 20px); /* Adjusts to 2 columns */
-  margin-left: 250px;
-  margin-right: 250px;
+
+#project-images{
+  display: flex;
+  flex-wrap: wrap;
   text-align: center;
-  gap: 20px;
+  gap: 10px; /* Adds spacing between images */
+  justify-content: center;
 }
-
 
 .navigation {
   list-style: none;
@@ -424,23 +385,6 @@ service-images {
   padding: 0;
 }
 
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 16px;
-  padding: 20px;
-}
-
-.gallery picture {
-  width: 100%;
-}
-
-.gallery img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
 @media (max-width: 480px) {
   #message h3 {
     font-size: 1.5rem; /* Even smaller for very small screens */
@@ -591,10 +535,6 @@ service-images {
   justify-content: flex-start;
 }
 
-.service-description {
-  margin-bottom: 40px; /* More space between description and images */
-}
-
 .service-images {
   flex-direction: row;
   justify-content: space-between;
@@ -630,4 +570,9 @@ service-images {
     max-width: 300px; /* Set a fixed size if needed */
     height: auto;
   }
+  #project-images{
+   margin-left: 650px;
+   margin-right: 650px;
+  }
 }
+
