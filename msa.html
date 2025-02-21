@@ -80,33 +80,24 @@
             <ul class="navigation">
               <li><a href="index.html">Home</a></li>
               <li class="dropdown">
-                <a href="services.html"
-                  >Services <span class="arrow">▼</span></a
-                >
+                <a href="javascript:void(0);" onclick="this.nextElementSibling.classList.toggle('show')">
+                  Services <span class="arrow">▼</span>
+                </a>
                 <div class="dropdown-menu">
-                  <div class="service-item">
-                    <a href="photography.html">Photography</a>
-                  </div>
-                  <div class="service-item">
-                    <a href="videography.html">Videography</a>
-                  </div>
-                  <div class="service-item">
-                    <a href="visual-design.html">Visual Design</a>
-                  </div>
-                  <div class="service-item">
-                    <a href="vintage-focus-portraits.html">Vintage Focus Portraits</a>
-                  </div>
+                  <div class="service-item"><a href="photography.html">Photography</a></div>
+                  <div class="service-item"><a href="videography.html">Videography</a></div>
+                  <div class="service-item"><a href="visual-design.html">Visual Design</a></div>
+                  <div class="service-item"><a href="vintage-focus-portraits.html">Vintage Focus Portraits</a></div>
                 </div>
               </li>
               <li><a href="about.html">About</a></li>
               <li><a href="contact-me.html">Contact</a></li>
+          
+              <!-- Hamburger and Close Icons -->
               <li>
-                <a
-                  href="javascript:void(0);"
-                  class="icon"
-                  onclick="menuToggle()"
-                >
-                  <i class="fas fa-bars"></i>
+                <a href="javascript:void(0);" class="icon" onclick="toggleMenu(this)">
+                  <i class="fas fa-bars open-icon"></i>
+                  <i class="fas fa-times close-icon"></i>
                 </a>
               </li>
             </ul>
