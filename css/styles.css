@@ -17,7 +17,13 @@ light-gray: #F4F5F6
 
 body {
     background-color: #F4F5F6 ;
-
+    background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), 
+            url('../img/TSP_Clock.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top 150px;
+    background-attachment: fixed;
+    background-size: 75%;
     font-family: inter, sans-serif;
     font-style: normal;
     font-size: 16px;
@@ -82,6 +88,14 @@ h1 {
 .container {
   padding: 0 15px
 }
+.logo-text {
+  font-family: 'Poor Richard', cursive;
+  font-size: 2.75em; /* You can adjust this to your preferred size */
+  color: #000000;
+  text-decoration: none;
+  text-align: center; /* Align text to the left */;
+  align-items: center;
+}
 .contact-container {
   max-width: 800px;  /* Optional: Adjust width for readability */
   margin: 0 auto;    /* Centers the container */
@@ -134,6 +148,7 @@ h1 {
   position: fixed;
   width: 100%;
   z-index: 1000;
+  justify-content: center;
  }
  
  #about-text {
@@ -159,13 +174,12 @@ height: auto;
 
  .navtoggle li:not(:last-child) {
   display: none;
-  color: #000;
+  margin: 0;
 }
 
  nav > ul {
   list-style-type: none;
   padding: 0;
-  color: #000000;
  }
 
 
@@ -204,14 +218,9 @@ height: auto;
   padding: 0 0 10px;
   
 }
- #hero {
-  background-color: #685664;
-  
- }
  .navtoggle, .navtoggle.responsive {
   position: relative;
-  color:#000000;
-}
+ }
 .navtoggle li .icon {
   position: absolute;
   right: 0;
@@ -219,6 +228,7 @@ height: auto;
   font-size: 20px;
   color:#000000;
 }
+
 
 #self {
   display: flex;
@@ -235,6 +245,7 @@ height: auto;
 
 #message h3 {
   text-align: center;
+  padding-top: 250px;
   font-size: 2.5rem; /* Default font size for larger screens */
   white-space: normal;
 }
@@ -320,47 +331,6 @@ service-images {
     font-size: 1.8rem; /* Smaller font size for screens smaller than 768px */
   }
   
-/* Basic dropdown container */
-.dropdown {
-  position: relative;
-  z-index: 9999;
-}
-
-/* Basic styling for the dropdown menu */
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  list-style: none;
-  background-color: #C3A86f;
-  padding: 10px;
-  margin: 0;
-  top: 100%;
-  left: 0;
-  width: 180px; /* Make it wider */
-  border-radius: 5px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  z-index: 9999;
-}
-
-/* List item in the dropdown */
-.dropdown-menu li {
-  list-style: none;
-  padding: 10px;
-}
-
-.dropdown-menu a {
-  color: #000;
-  text-decoration: none;
-}
-
-.dropdown-menu a:hover {
-  background-color: #EDE5D4;
-}
-
-/* Show dropdown on hover */
-.dropdown:hover .dropdown-menu {
-  display: block;
-}
 #work {
   display: flex;
   flex-wrap: wrap;
@@ -369,8 +339,6 @@ service-images {
   justify-content: center;
   
 }
-
-
 #project-images{
   display: flex;
   flex-wrap: wrap;
@@ -379,37 +347,24 @@ service-images {
   justify-content: center;
 }
 
-.navigation {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
 @media (max-width: 480px) {
+
   #message h3 {
     font-size: 1.5rem; /* Even smaller for very small screens */
   }
 }
+
+
 /*medium devices (640px and larger)*/
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 851px) {
   header{
-    text-align: unset;
-    padding: 20px 0 13px;
+    text-align: auto;
+    padding:25px;
   }
   nav {
     width: auto;
     float: right;
-    margin-top: 30px;
-  }
-  .col-md-6 {
-    width: 50%;
-  }
-  .col-md-12{
-    width: 100%;
-  }
-  [class*="col-"] {
-    float: left;
-    padding: 15px;
+    margin-top: 10px;
   }
   nav > ul > li {
     display: inline-block;
@@ -431,9 +386,19 @@ service-images {
   
   .navtoggle.responsive li:last-child  {
     padding: 0;}
-  
-}
 
+}
+/* General styles for both logos */
+
+/* On smaller screens (less than 900px), hide the text and show the image logo */
+@media screen and (max-width: 899px) {
+  #logoText {
+    display: none;  /* Hide text-based logo */
+  }
+  #logoImageLink {
+    display: inline-block;  /* Show image logo */
+  }
+}
 /* For mobile - Stack images vertically */
 @media (max-width: 768px) {
   .service-images {
@@ -446,16 +411,21 @@ service-images {
     margin-bottom: 50px;
   }
 }
+/* On larger screens (900px and above), restore the text logo and hide the image logo */
+@media screen and (min-width: 851px) {
+  #logoText {
+    display: inline-block;  /* Show text-based logo */
+  }
+
+  #logoImageLink {
+    display: none;  /* Hide image-based logo */
+  }
+}
 /*large devices (1024px and larger)*/
 @media only screen and (min-width: 1024px) {
   header{
     text-align: unset;
-    padding: 20px 0 13px;
-  }
-  nav {
-    width: auto;
-    float: right;
-    margin-top: 30px;
+    padding: 25px;
   }
   .col-lg-7 {
     width: 60%;
@@ -470,11 +440,7 @@ service-images {
     float: left;
     padding: 15px;
   }
-  .container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+
   .service-images {
     flex-wrap: nowrap; /* Ensures all images stay in one row */
     justify-content: center; /* Centers them if needed */
@@ -576,3 +542,8 @@ service-images {
   }
 }
 
+@media (min-width: 1600px) {
+  body {
+      background-size: 35%;  /* Cap the width at 1500px */
+  }
+}
