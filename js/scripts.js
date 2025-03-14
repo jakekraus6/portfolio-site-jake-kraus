@@ -21,3 +21,24 @@ window.addEventListener('scroll', function () {
     logoImageLink.classList.remove('visible');
   }
 });
+let touchStartX = 0;
+let touchEndX = 0;
+
+const lightbox = document.getElementById("lightbox");
+
+lightbox.addEventListener("touchstart", (e) => {
+  touchStartX = e.changedTouches[0].screenX;
+});
+
+lightbox.addEventListener("touchend", (e) => {
+  touchEndX = e.changedTouches[0].screenX;
+  handleSwipe();
+});
+
+function handleSwipe() {
+  if (touchStartX - touchEndX > 50) {
+    nextImage(event); // Swipe left → Next
+  } else if (touchEndX - touchStartX > 50) {
+    prevImage(event); // Swipe right → Previous
+  }
+}
