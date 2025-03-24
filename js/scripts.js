@@ -1,26 +1,28 @@
+// Handle menu toggle for the hamburger menu
 function menuToggle() {
+  console.log("Hamburger menu clicked!");
   var x = document.getElementById('myNavtoggle');
+  console.log(x.className);
   if (x.className === 'navtoggle') {
     x.className += ' responsive';
   } else {
     x.className = 'navtoggle';
   }
 }
-window.addEventListener('scroll', function () {
-  const scrollThreshold = 200; // Change to the scroll position where you want the logo to change
-  const logoText = document.getElementById('logoText');
-  const logoImageLink = document.getElementById('logoImageLink');
 
-  if (window.scrollY > scrollThreshold) {
-    // Hide text logo, show image logo
-    logoText.classList.add('hidden');
-    logoImageLink.classList.add('visible');
-  } else {
-    // Revert to original state
-    logoText.classList.remove('hidden');
-    logoImageLink.classList.remove('visible');
+document.getElementById("lightbox").addEventListener("click", function(event) {
+  // Prevent lightbox from closing when clicking inside the navigation menu or the hamburger icon
+  if (event.target.closest(".navtoggle") || event.target.closest(".icon")) {
+    event.stopPropagation();  // Prevent the event from propagating to the lightbox click listener
+    return;  // Don't close the lightbox
   }
+
+  // Close lightbox when clicking outside the image area
+  if (event.target !== this) return; 
+  closeLightbox(); 
 });
+
+// Lightbox swipe functionality (for touch devices)
 let touchStartX = 0;
 let touchEndX = 0;
 
@@ -35,6 +37,7 @@ lightbox.addEventListener("touchend", (e) => {
   handleSwipe();
 });
 
+// Handle swipe logic
 function handleSwipe() {
   if (touchStartX - touchEndX > 50) {
     nextImage(event); // Swipe left → Next
@@ -42,3 +45,15 @@ function handleSwipe() {
     prevImage(event); // Swipe right → Previous
   }
 }
+
+// Prevent lightbox click from interfering with the hamburger menu
+document.getElementById("lightbox").addEventListener("click", function(event) {
+  // Prevent lightbox from closing when clicking on the menu
+  if (event.target.closest(".navtoggle")) {
+    return; // Stop if the click is inside the navigation menu
+  }
+  
+  // Only close the lightbox if clicking outside the image area
+  if (event.target !== this) return; 
+  closeLightbox(); 
+});
